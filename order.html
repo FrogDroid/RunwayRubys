@@ -40,6 +40,67 @@
     <!--todo: main page contents static-->
     <div class="row">
         <!--Food name, picture, options for customization-->
+        <div class="col-sm-12 col-md-6">
+            <img src="images/placeholder.jpg" alt="Picture of the food" class="img-responsive"/>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h2>Roast Beef Sandwich</h2>
+            <div>
+                <ul>
+                    <li>Wheat Bread</li>
+                    <li>Provolone Cheese</li>
+                    <li>Extra Meat + $1.50</li>
+                </ul>
+                <ul>
+                    <li>Lettuce</li>
+                    <li>Tomato</li>
+                    <li>Mayo</li>
+                    <li>Cucumber</li>
+                    <li>Olive</li>
+                    <li>Sprouts</li>
+                </ul>
+            </div>
+            <a class="btn btn-primary" href="#">Customize</a>
+        </div>
+    </div>
+    <div class="row" id="customization">
+        <div class="col-sm-12 col-md-4">
+            <!--cheese and meats-->
+            <label for="meat">Cheese and Meat options:</label> <br/>
+            <select name="meat" id="meat" multiple="multiple" class="multi-select">
+                <option value="provolone" selected>provolone</option>
+                <option value="Extra-roastbeef" selected>Extra Roast Beef</option>
+                <option value="ham">add ham</option>
+                <option value="American">American cheese</option>
+                <option value="Munster">Munster Cheese</option>
+                <option value="etc">etc</option>
+            </select>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <!--bread selector-->
+            <label for="bread">Choose your bread:</label> <br/>
+            <select class="multi-select" name="bread" id="bread">
+                <option value="wheat" selected>Wheat</option>
+                <option value="white">white</option>
+                <option value="rye">rye</option>
+                <option value="etc">etc</option>
+            </select>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <!--condiments selector-->
+            <label for="toppings">Toppings:</label>
+            <br/>
+            <select name="toppings" id="toppings" class="multi-select" multiple="multiple">
+                <option value="lettuce" selected>Lettuce</option>
+                <option value="spinach" selected>Spinach</option>
+                <option value="ketchup" >ketchup</option>
+                <option value="Cucumbers" selected>Cucumbers</option>
+                <option value="Sprouts" selected>Sprouts</option>
+                <option value="tomato" selected>tomato</option>
+                <option value="olives" selected>olive</option>
+                <option value="etc">etc</option>
+            </select>
+        </div>
     </div>
 </div>
 <footer>
@@ -57,6 +118,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
