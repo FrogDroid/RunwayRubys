@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Runway Ruby's</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="styles/app.css"/>
+</head>
+<body>
+<header>
+    <!--todo: put the nav bar in here.-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Runway Ruby's</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li class="active"><a href="order.html">Place an Order</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../navbar/">Log In</a></li>
+                    <li><a href="../navbar-static-top/">About Us</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</header>
+<div class="container main-contents">
+    <!--todo: main page contents static-->
+    <div class="row">
+        <div class="col-lg-6 center-block col-sm-12">
+            <div class="row">
+                <h2>Daily Special!</h2>
+                <a href="specialorder.html"><h3>Ruby's Ribs</h3></a>
+                <a href="specialorder.html">
+                    <img src="images/ribs.jpg" alt="Put a picture of the Dialy special" class="img-responsive"/>
+                </a>
+                <p>Description of lorem ipsum ribs pig brisket declicious meat stuff goes around here.</p>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-primary">Add Another Item</button>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>Daily Special</td>
+                        <td>$7.99</td>
+                    </tr>
+                    <tr class="reciept-total">
+                        <td>Total</td>
+                        <td>$7.99</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-success">check out</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <!--todo: put a footer in here.-->
+    <div class="row">
+        <div class="col-sm-6">
+            <h4>A Parc company</h4>
+        </div>
+        <div class="col-sm-4">
+            <h4>Powered by Weber State University</h4>
+        </div>
+    </div>
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
