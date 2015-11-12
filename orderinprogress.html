@@ -39,6 +39,14 @@
 <div class="container main-contents">
     <!--todo: main page contents static-->
     <div class="row">
+        <div class="jumbotron">
+            <div class="col-sm-12" id="progressTron"></div>
+            <div id="orderReady" class="hidden">
+                <h2>Your order is ready for pick-up!</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
         <!--Food name, picture, options for customization-->
         <div class="col-sm-12 col-md-6 hidden-sm">
             <img src="images/placeholder.jpg" alt="Picture of the food" class="img-responsive"/>
@@ -108,6 +116,8 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+<script src="bower_components/progressbar.js/dist/progressbar.min.js"></script>
+<script src="js/inprogress.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

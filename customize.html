@@ -26,7 +26,8 @@
                 <ul class="nav navbar-nav">
                     <li class=""><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li class="active"><a href="order.html">Place an Order</a></li>
+                    <li class=""><a href="order.html">Place an Order</a></li>
+                    <li class="active"><a href="orderoverview.html">Current Order</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="../navbar/">Log In</a></li>
@@ -40,30 +41,7 @@
     <!--todo: main page contents static-->
     <div class="row">
         <!--Food name, picture, options for customization-->
-        <div class="col-sm-12 col-md-6 hidden-sm">
-            <img src="images/placeholder.jpg" alt="Picture of the food" class="img-responsive"/>
-        </div>
         <div class="col-sm-12 col-md-6">
-            <h2>Bacon Cheese Burger</h2>
-            <div>
-                <ul class="list-unstyled">
-                    <li>Cheddar Cheese</li>
-                </ul>
-                <ul class="list-unstyled">
-                    <li>Lettuce</li>
-                    <li>Tomato</li>
-                    <li>Mayo</li>
-                    <li>Ketchup</li>
-                    <li>Mustard</li>
-                    <li>Pickles</li>
-                </ul>
-            </div>
-            <a class="btn btn-primary" href="customize.html">Customize</a>
-        </div>
-    </div>
-    <div class="row">
-        <!--Food name, picture, options for customization-->
-        <div class="col-sm-12 col-md-6 hidden-sm">
             <img src="images/placeholder.jpg" alt="Picture of the food" class="img-responsive"/>
         </div>
         <div class="col-sm-12 col-md-6">
@@ -83,12 +61,51 @@
                     <li>Sprouts</li>
                 </ul>
             </div>
-            <a class="btn btn-primary" href="customize.html">Customize</a>
+            <a class="btn btn-primary" href="#">Customize</a>
+        </div>
+    </div>
+    <div class="row" id="customization">
+        <div class="col-sm-12 col-md-4">
+            <!--cheese and meats-->
+            <label for="meat">Cheese and Meat options:</label> <br/>
+            <select name="meat" id="meat" multiple="multiple" class="multi-select">
+                <option value="provolone" selected>provolone</option>
+                <option value="Extra-roastbeef" selected>Extra Roast Beef</option>
+                <option value="ham">add ham</option>
+                <option value="American">American cheese</option>
+                <option value="Munster">Munster Cheese</option>
+                <option value="etc">etc</option>
+            </select>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <!--bread selector-->
+            <label for="bread">Choose your bread:</label> <br/>
+            <select class="multi-select" name="bread" id="bread">
+                <option value="wheat" selected>Wheat</option>
+                <option value="white">white</option>
+                <option value="rye">rye</option>
+                <option value="etc">etc</option>
+            </select>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <!--condiments selector-->
+            <label for="toppings">Toppings:</label>
+            <br/>
+            <select name="toppings" id="toppings" class="multi-select" multiple="multiple">
+                <option value="lettuce" selected>Lettuce</option>
+                <option value="spinach" selected>Spinach</option>
+                <option value="ketchup" >ketchup</option>
+                <option value="Cucumbers" selected>Cucumbers</option>
+                <option value="Sprouts" selected>Sprouts</option>
+                <option value="tomato" selected>tomato</option>
+                <option value="olives" selected>olive</option>
+                <option value="etc">etc</option>
+            </select>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <a href="paymentdisplay.html" class="btn btn-success">Confirm order</a>
+            <a href="order.html" class="btn btn-success">Save</a>
         </div>
     </div>
 </div>

@@ -12,6 +12,7 @@
 <header>
     <!--todo: put the nav bar in here.-->
     <nav class="navbar navbar-default navbar-fixed-top">
+
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -20,13 +21,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Runway Ruby's</a>
+                <a class="navbar-brand" href="#">Runway Ruby's</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li class="active"><a href="order.html">Place an Order</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class=""><a href="menu.html">Menu</a></li>
+                    <li><a href="#order">Place an Order</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="../navbar/">Log In</a></li>
@@ -38,34 +39,10 @@
 </header>
 <div class="container main-contents">
     <!--todo: main page contents static-->
-    <div class="row">
-        <div class="col-lg-6 center-block col-sm-12">
-            <div class="row">
-                <h2>Daily Special!</h2>
-                <a href="specialorder.html"><h3>Ruby's Ribs</h3></a>
-                <a href="specialorder.html">
-                    <img src="images/ribs.jpg" alt="Put a picture of the Dialy special" class="img-responsive"/>
-                </a>
-                <p>Description of lorem ipsum ribs pig brisket declicious meat stuff goes around here.</p>
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-primary">Add Another Item</button>
-            </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td>Daily Special</td>
-                        <td>$7.99</td>
-                    </tr>
-                    <tr class="reciept-total">
-                        <td>Total</td>
-                        <td>$7.99</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="paymentdisplay.html" class="btn btn-success">check out</a>
+    <div class="jumbotron">
+        <div class="container">
+            <p>There will be an intermediary here where we redirect to the payment service. Once they are done the service will redirect to the next page.</p>
+            <a href="orderinprogress.html" class="btn btn-primary">Next Page</a>
         </div>
     </div>
 </div>
