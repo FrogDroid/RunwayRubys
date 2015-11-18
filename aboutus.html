@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Runway Ruby's</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+</head>
+<body>
+    <header>
+        <!--todo: put the nav bar in here.-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Runway Ruby's</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li class="active"><a href="order.html">Place an Order</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="login.html">Log In</a></li>
+                       <li class="active"><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <div class="container main-contents">
+        <!--todo: main page contents static-->
+        <div class="row">
+            <!--Food name, picture, options for customization-->
+            <div class="col-sm-12 col-md-4 hidden-sm">
+                <img src="images/RunwayLogo.png" alt="Picture of the food" class="img-responsive" />
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <div class="jumbotron">
+                    <h2 class="text-center">About Us</h2>
+                    <div>
+                        <p>Runway Ruby’s Restaurant atmosphere is welcoming, and full of friendly smiling faces. The environment set in the post world war II era decor. Inspired by the everyday family cooking that we grew up with, you’ll feel at home while enjoying a great meal in our casual and relaxed dining room. Experience our home-style cooking, friendly service, and casual dining atmosphere. We invite you to come see what makes Runway Ruby’s Restaurant a favorite on Hill Air Force Base in bldg. 1235.</p>
+                        <br />
+                        <p>Runway Ruby’s Restaurant has been in business since 2010. We are a PARC owned and operated restaurant. We are proud to be the largest quick-serve restaurant on the West side of Hill Air Force Base. We appreciate all of our customers who have continued to dine with us for breakfast and lunch. Runway Ruby’s menu includes traditional, breakfast and lunch items daily. Besides the delicious sandwiches and specialty salads, rice bowls, burritos and burgers, our menu offers hot daily specials that are sure to delight the taste buds.</p>
+                     </div>
+       
+                </div>
+            </div>
+        </div>
+   
+      
+    </div>
+    <footer>
+        <!--todo: put a footer in here.-->
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>A Parc company</h4>
+            </div>
+            <div class="col-sm-4">
+                <h4>Powered by Weber State University</h4>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
