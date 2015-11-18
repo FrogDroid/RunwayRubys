@@ -4,3 +4,7 @@
 $(function(){
     $('.multi-select').multiselect();
 })
+
+function showCombo(elem){
+    $(elem).next('ul').removeClass('hide')
+}
