@@ -5,64 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Runway Ruby's</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="styles/app.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/app.css" />
 </head>
 <body>
     <header>
         <!--todo: put the nav bar in here.-->
         <nav class="navbar navbar-default navbar-fixed-top">
-
             <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html">Runway Ruby's</a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="order.html>Place an Order</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="login.html">Log In</a></li>
-                            <li><a href="aboutus.html">About Us</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Runway Ruby's</a>
                 </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li class="active"><a href="order.html">Place an Order</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="login.html">Log In</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
         </nav>
     </header>
-    <div class="container main-contents">
-        <div class="jumbotron">
-            <h1>Welcome to Runway Ruby's! </h1>
-            <p>We are introducing online ordering for pick-up.</p>
-            <!--<button type="button" class="btn btn-default">-->
-                <a href="menu.html" class="btn btn-default">Get Started</a>
-            <!--</button>-->
-        </div>
-        <!--todo: main page contents static-->
-    </div>
-    <footer>
-        <!--todo: put a footer in here.-->
+    <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <h4>A Parc company</h4>
-            </div>
-            <div class="col-sm-4">
-                <h4>Powered by Weber State University</h4>
+            <div class="span6 center">
+                <form class="form-horizontal" action='' method="POST">
+                    <br />
+                    <br />
+                    <fieldset>
+                            <h1>Login</h1>                     
+                        <div class="control-group">
+                            <!-- Username -->
+                            <label class="control-label" for="username">Username</label>
+                            <div class="controls">
+                                <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <!-- Password-->
+                            <label class="control-label" for="password">Password</label>
+                            <div class="controls">
+                                <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="control-group">
+                            <!-- Button -->
+                            <div class="controls">
+                                <button class="btn btn-success">Login</button><br/>
+                                <span>Don't have account?</span><a class="btn btn-link" href="signup.html">Sign Up Here</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
-    </footer>
+        </div>
+        <footer>
+            <!--todo: put a footer in here.-->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>A Parc company</h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Powered by Weber State University</h4>
+                </div>
+            </div>
+        </footer>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
-<script src="js/app.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+        <script src="js/app.js"></script>
 </body>
 </html>
